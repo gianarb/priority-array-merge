@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<phpunit
+    bootstrap="./vendor/autoload.php"
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    verbose="true"
+    stopOnFailure="false"
+    syntaxCheck="true"
+>
+    <testsuite name="GianArb util tests">
+        <directory>./tests/GianArb/Util</directory>
+    </testsuite>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+</phpunit>

@@ -29,3 +29,12 @@ $arr2 = [
 var_dump($mergeManager->merge($arr1, $arr2));
 // output ["companyId"=>"024", "companyCode": "B353sf", "companyName": "Fox"]
 ```
+
+## Benchamarks
+```
+GianArb\Benchmarks\Util\ArrayMergeEvent
+    Method Name                       Iterations    Average Time      Ops/second
+    -------------------------------  ------------  --------------    -------------
+    mergeTwoArrayWithNativeFunction: [1,000     ] [0.0000039789677] [251,321.46923]
+    mergeTwoArrayWithPriority      : [1,000     ] [0.0000096676350] [103,437.91462]
+```
